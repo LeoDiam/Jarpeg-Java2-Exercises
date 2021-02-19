@@ -35,23 +35,13 @@ import java.util.stream.Stream;
 public class Evade {
 
     public Function<Integer, Integer> tcherkess() {
-        Function<Integer, Integer> fun = new Function<Integer, Integer>() {
-            @Override
-            public Integer apply(Integer integer) {
-                return integer * 77;
-            }
-        };
+        Function<Integer, Integer> fun = integer -> integer * 77;
         return fun;
     }
 
     public Function<Integer, Integer> snakeskin(Function<Integer,
             Integer> received) {
-        Function<Integer, Integer> fun = new Function<Integer, Integer>() {
-            @Override
-            public Integer apply(Integer integer) {
-                return received.apply(integer) - 9;
-            }
-        };
+        Function<Integer, Integer> fun = integer -> received.apply(integer) - 9;
         return fun;
     }
 

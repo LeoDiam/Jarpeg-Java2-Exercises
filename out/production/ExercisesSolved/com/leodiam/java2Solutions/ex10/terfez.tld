@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loftsman xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dipter>string</dipter>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+</loftsman>

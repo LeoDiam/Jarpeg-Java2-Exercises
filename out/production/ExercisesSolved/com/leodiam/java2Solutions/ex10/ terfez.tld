@@ -1,0 +1,31 @@
+<!--Convert schema to xml-->
+<!--&lt;!&ndash;<?xml version="1.0" encoding="utf-8" ?>&ndash;&gt;-->
+<!--&lt;!&ndash;<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"&ndash;&gt;-->
+<!--&lt;!&ndash;            xmlns="http://www.w3.org/2001/XMLSchema">&ndash;&gt;-->
+<!--&lt;!&ndash;    <xsd:element name="loftsman">&ndash;&gt;-->
+<!--&lt;!&ndash;        <xsd:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;            <xsd:sequence>&ndash;&gt;-->
+<!--&lt;!&ndash;                <xsd:element name="dipter" type="xsd:string"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <xsd:element name="porthors" minOccurs="2" maxOccurs="5">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <xsd:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <xsd:simpleContent>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <xsd:extension base="xsd:string">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <xsd:attribute name="kronion" type="xsd:string"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </xsd:extension>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </xsd:simpleContent>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </xsd:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;                </xsd:element>&ndash;&gt;-->
+<!--&lt;!&ndash;            </xsd:sequence>&ndash;&gt;-->
+<!--&lt;!&ndash;        </xsd:complexType>&ndash;&gt;-->
+<!--&lt;!&ndash;    </xsd:element>&ndash;&gt;-->
+<!--&lt;!&ndash;</xsd:schema>&ndash;&gt;-->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<loftsman xsi:noNamespaceSchemaLocation=" terfez.tld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dipter>string</dipter>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+    <porthors kronion="string">string</porthors>
+</loftsman>
