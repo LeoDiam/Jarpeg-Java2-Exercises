@@ -2,6 +2,7 @@ package com.leodiam.java2Solutions.randomEx;
 
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -10,26 +11,19 @@ class FindDay {
      * Return the name of the given numeric week day
      */
     public static String weekDayName(int weekDayNumber) {
-        switch (weekDayNumber) {
-            case Calendar.MONDAY:
-                return "Δευτέρα";
-            case Calendar.TUESDAY:
-                return "Τρίτη";
-            case Calendar.WEDNESDAY:
-                return "Τετάρτη";
-            case Calendar.THURSDAY:
-                return "Πέμπτη";
-            case Calendar.FRIDAY:
-                return "Παρασκευή";
-            case Calendar.SATURDAY:
-                return "Σάββατο";
-            case Calendar.SUNDAY:
-                return "Κυριακή";
-        }
-        return null;
+        return switch (weekDayNumber) {
+            case Calendar.MONDAY -> "Δευτέρα";
+            case Calendar.TUESDAY -> "Τρίτη";
+            case Calendar.WEDNESDAY -> "Τετάρτη";
+            case Calendar.THURSDAY -> "Πέμπτη";
+            case Calendar.FRIDAY -> "Παρασκευή";
+            case Calendar.SATURDAY -> "Σάββατο";
+            case Calendar.SUNDAY -> "Κυριακή";
+            default -> null;
+        };
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) {
         // Are appropriate arguments given?
         if (args.length != 3) {
             System.err.println("usage: FindDay year month day");
@@ -47,7 +41,7 @@ class FindDay {
 
         // Create an output channel for Greek characters
         PrintWriter out = new PrintWriter(
-                new OutputStreamWriter(System.out, "utf-8"), true);
+                new OutputStreamWriter(System.out, StandardCharsets.UTF_8), true);
         // Print the day name
         out.println(dn);
     }
