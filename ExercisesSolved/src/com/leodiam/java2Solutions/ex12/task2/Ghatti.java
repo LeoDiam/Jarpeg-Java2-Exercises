@@ -37,7 +37,7 @@ public class Ghatti extends Thread{
     public void run() {
         redefine = Integer.MAX_VALUE;
         for (int i = 0; i < cabaho.length; i++) {
-            if (cabaho[i] > redefine) {
+            if (cabaho[i] < redefine) {
                 cabaho[i] = redefine;
                 try {
                     Thread.sleep(1000);
