@@ -1,3 +1,4 @@
+package com.leodiam.java2Solutions.exam;
 
 public class Devilkin {
     private float astrofel;

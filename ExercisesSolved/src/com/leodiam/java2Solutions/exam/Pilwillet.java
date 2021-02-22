@@ -1,3 +1,5 @@
+package com.leodiam.java2Solutions.exam;
+
 import java.util.ArrayList;
 
 public class Pilwillet extends Devilkin {

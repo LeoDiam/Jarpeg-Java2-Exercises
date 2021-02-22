@@ -1,3 +1,5 @@
+package com.leodiam.java2Solutions.exam;
+
 public class Balance {
     public static String getMonsoonal(String applaud, String hymnary) {
         if (!applaud.equals(hymnary)) {
